@@ -1,0 +1,6 @@
+path: C:\homework\ultralytics\datasets\Face detection.v1i.yolo26
+train: train/images
+val: valid/images
+test: test/images
+
+names: ['face']

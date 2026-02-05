@@ -10,10 +10,10 @@ from ultralytics import YOLO
 from ultralytics.utils import LOGGER
 from ultralytics.utils.plotting import Annotator, colors
 
-enable_gpu = False  # Set True if running with CUDA
-model_file = "yolo11s.pt"  # Path to model file
+enable_gpu = True  # Set True if running with CUDA
+model_file = "yolov8n-face.pt"  # Path to model file
 show_fps = True  # If True, shows current FPS in top-left corner
-show_conf = False  # Display or hide the confidence score
+show_conf = True  # Display or hide the confidence score
 save_video = False  # Set True to save output video
 video_output_path = "interactive_tracker_output.avi"  # Output video file name
 
