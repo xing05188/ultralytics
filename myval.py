@@ -1,9 +1,9 @@
 from ultralytics import  YOLO
 
 if __name__ == '__main__':
-    model = YOLO(r"C:\homework\ultralytics\runs\detect\train9\weights\best.pt")
+    model = YOLO(r"C:\homework\ultralytics\runs\detect\train5\weights\best.pt")
     model.val(
-        data=r"Face detection.v1i.yolo26.yaml",
+        data=r"widerface.yaml",
         imgsz=640,
         split="val",
     )

@@ -1,12 +1,13 @@
 from ultralytics import YOLO
 
-model = YOLO(r"yolov8n-face.pt")
+model = YOLO(r"C:\homework\ultralytics\models\yolo26n-face.pt")
 model.predict(
     source=r"C:\homework\ultralytics\mytest.jpg",
     save=True,
     show=False,
     save_txt=False,
     task='detect',
+    classes=0,  # 仅检测类别0（人脸）
 )
 # model.predict(
 #     source="",            # (str, 可选) 图像或视频的源目录

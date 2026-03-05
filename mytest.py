@@ -1,4 +1,3 @@
-from ultralytics import YOLO
+from ultralytics.hub import check_dataset
 
-model = YOLO(r"yolov8n-face.pt")
-print(model.info())  # 查看模型结构
+check_dataset("datasets\widerface\widerface.yaml", task="detect")
