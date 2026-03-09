@@ -1,7 +1,7 @@
 from ultralytics import  YOLO
 
 if __name__ == '__main__':
-    model = YOLO(r"C:\homework\ultralytics\runs\detect\train5\weights\best.pt")
+    model = YOLO(r"C:\homework\ultralytics\models\yolov11l-face.pt")
     model.val(
         data=r"widerface.yaml",
         imgsz=640,
